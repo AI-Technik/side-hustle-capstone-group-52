@@ -1,0 +1,1 @@
+{"hostname":"os.hostname","platform":"os.platform","architecture":"os.arch","numberOfCPUS":"os.cpus","networkInterfaces":"os.networkInterfaces","uptime":"os.uptime"}
