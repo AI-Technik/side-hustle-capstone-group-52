@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
       break;
     case "/sys":
       path += "sys.html";
-      res.statusCode = 200;
+      res.statusCode = 201;
       break;
     default:
       path += "404.html";
@@ -46,7 +46,7 @@ const server = http.createServer((req, res) => {
     networkInterfaces: os.networkInterfaces(),
     uptime: os.uptime(),
   };
-  fs.writeFile("sys.json", JSON.stringify(data), (err, res) => {
+  fs.writeFile("osinfo.json", JSON.stringify(data), (err, res) => {
     // res.statusCode(200);
     // res.setHeader("Content-Type", "text/plain");
     if (err) {
